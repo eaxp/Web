@@ -58,13 +58,13 @@ export default {
         },
         {
           icon: "mdi-database",
-          title: "Show data",
+          title: "Show data table",
           to: "/showdata",
         },
         {
           icon: "mdi-application-import",
-          title: "Import data",
-          to: "/import",
+          title: "Show Grahp",
+          to: "/showgrahp",
         },
         {
           icon: "mdi-circle-outline",

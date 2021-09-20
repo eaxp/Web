@@ -1,5 +1,5 @@
 <template>
     <div>
-        page show grahp
+        page show data tables
     </div>
 </template>

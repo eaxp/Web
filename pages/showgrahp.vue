@@ -1,5 +1,5 @@
 <template>
     <div>
-        page import
+        page show Grahp
     </div>
 </template>
