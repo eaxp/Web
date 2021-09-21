@@ -2,7 +2,7 @@
   <div>
     <h1>Dashboard</h1>
     <v-row>
-      <v-col md="12">
+      <!--<v-col md="12">
         <v-card>
           <line-chart
             :linechartdata="chartdata"
@@ -10,7 +10,7 @@
             :height="300"
           />
         </v-card>
-      </v-col>
+      </v-col>-->
       <br><br>
       <v-col md="12">
         <v-card v-if="loaded">
@@ -33,8 +33,8 @@ export default {
   data() {
     return {
       chartdata: {
-        labels: ["January", "February", "March", "April"],
-        datasets: [
+      labels: ["January", "February", "March", "April"],
+      datasets: [
           {
             label: "Data One",
             borderColor: "#f87979",
@@ -66,14 +66,14 @@ export default {
         var tmplabels = [],tmpdata = [];
         results.forEach(function(x) {
           tmplabels.push(x.id);
-          tmpdata.push(parseFloat(x.salary));
+          tmpdata.push(parseFloat(x.sum));
         });
 
         var tempData = {
           labels: tmplabels,
           datasets: [
             {
-              label: "Salary by ID",
+              label: "Sum",
               data: tmpdata,
               borderColor: "rgb(75, 192, 192)",
               backgroundColor: "rgba(75, 192, 192, 0.2)"
