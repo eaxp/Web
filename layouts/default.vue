@@ -38,7 +38,7 @@
         </template>
 
         <v-list>
-          <v-list-item v-for="(item, i) in items" :key="i" :to="item.to">
+          <v-list-item v-for="(item, i) in itemsS1" :key="i" :to="item.to">
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
         </v-list>
@@ -83,6 +83,18 @@ export default {
           icon: "mdi-circle-outline",
           title: "null page",
           to: "/",
+        },
+      ],
+      itemsS1: [
+        {
+          icon: "mdi-account-details",
+          title: "show...",
+          to: "/",
+        },
+        {
+          icon: "mdi-database",
+          title: "log out",
+          to: "/showdata",
         },
       ],
       miniVariant: false,
