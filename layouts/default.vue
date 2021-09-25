@@ -82,12 +82,12 @@ export default {
         },
         {
           icon: "mdi-circle-outline",
-          title: "null page",
+          title: "Null page",
           to: "/login",
         },
         {
-          icon: "mdi-camcorder-box",
-          title: "realtime camera",
+          icon: "mdi-camcorder",
+          title: "Realtime camera",
           to: "/realtimecamera",
         },
       ],
