@@ -97,6 +97,11 @@ export default {
           title: "log out",
           to: "/",
         },
+          {
+          icon: "mdi-camcorder-box",
+          title: "realtime camera",
+          to: "/realtimecamera",
+        },
       ],
       miniVariant: false,
       right: true,
