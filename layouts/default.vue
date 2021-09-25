@@ -85,6 +85,11 @@ export default {
           title: "null page",
           to: "/login",
         },
+        {
+          icon: "mdi-camcorder-box",
+          title: "realtime camera",
+          to: "/realtimecamera",
+        },
       ],
       itemsS1: [
         {
@@ -96,11 +101,6 @@ export default {
           icon: "mdi-database",
           title: "log out",
           to: "/",
-        },
-          {
-          icon: "mdi-camcorder-box",
-          title: "realtime camera",
-          to: "/realtimecamera",
         },
       ],
       miniVariant: false,
