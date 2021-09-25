@@ -67,8 +67,8 @@ export default {
       items: [
         {
           icon: "mdi-account-details",
-          title: "Welcome",
-          to: "/",
+          title: "Home",
+          to: "/home",
         },
         {
           icon: "mdi-database",
