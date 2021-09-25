@@ -89,12 +89,12 @@ export default {
         {
           icon: "mdi-account-details",
           title: "show...",
-          to: "/",
+          to: "/showdata",
         },
         {
           icon: "mdi-database",
           title: "log out",
-          to: "/showdata",
+          to: "/",
         },
       ],
       miniVariant: false,
