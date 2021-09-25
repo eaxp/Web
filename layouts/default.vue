@@ -75,8 +75,8 @@ export default {
           to: "/showdata",
         },
         {
-          icon: "mdi-application-import",
-          title: "Show Grahp",
+          icon: "mdi-chart-pie ",
+          title: "Dashboard",
           to: "/showgrahp",
         },
         {
