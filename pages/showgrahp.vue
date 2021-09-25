@@ -17,7 +17,7 @@
           <line-chart
             :linechartdata="jsonchartdata"
             :lineoptions="barchartoptions"
-            :height="300"
+            :height="130"
           />
         </v-card>
       </v-col>
