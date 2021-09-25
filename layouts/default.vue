@@ -82,7 +82,7 @@ export default {
         {
           icon: "mdi-circle-outline",
           title: "null page",
-          to: "/",
+          to: "/login",
         },
       ],
       itemsS1: [
