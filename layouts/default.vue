@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app dark v-bind:style="{ background: $vuetify.theme.themes.dark.background}">
     <v-navigation-drawer v-model="drawer" clipped fixed app>
       <v-list>
         <v-list-item  
@@ -69,11 +69,6 @@ export default {
           icon: "mdi-account-details",
           title: "Home",
           to: "/home",
-        },
-        {
-          icon: "mdi-database",
-          title: "Show data table",
-          to: "/showdata",
         },
         {
           icon: "mdi-chart-pie ",

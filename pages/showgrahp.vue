@@ -11,7 +11,7 @@
           />
         </v-card>
       </v-col>-->
-      <br><br>
+      <br /><br />
       <v-col md="12">
         <v-card v-if="loaded">
           <line-chart
@@ -22,7 +22,34 @@
         </v-card>
       </v-col>
     </v-row>
-    
+    <div>
+      <h1>page show data tables</h1>
+      <br /><br /><br />
+      <!--<h2 v-if="data">{{data[0].id}}</h2>-->
+
+      <v-card>
+        <v-card-title>
+          Data table
+          <v-spacer></v-spacer>
+          <v-text-field
+            v-model="search"
+            append-icon="mdi-magnify"
+            label="Search"
+            single-lin
+            hide-details
+          >
+          </v-text-field>
+        </v-card-title>
+        <v-data-table
+          :headers="headers1"
+          :items="data1"
+          :search="search"
+          v-if="data1"
+        >
+        </v-data-table>
+        <br /><br /> </v-card
+      ><br /><br /><br />
+    </div>
   </div>
 </template>
 
@@ -33,58 +60,74 @@ export default {
   data() {
     return {
       chartdata: {
-      labels: ["January", "February", "March", "April"],
-      datasets: [
+        labels: ["January", "February", "March", "April"],
+        datasets: [
           {
             label: "Data One",
             borderColor: "#f87979",
             data: [40, 20, 50, 10],
-            fill: false
-          }
-        ]
+            fill: false,
+          },
+        ],
       },
       options: {
         responsive: true,
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
       },
       loaded: false,
       apichartdata: {
         labels: [],
-        datasets: []
+        datasets: [],
       },
       jsonchartdata: {
         labels: [],
-        datasets: []
+        datasets: [],
       },
+      
+      data1: null,
+      search1: "",
+      
+      headers1: [
+        { text: "ID", align: "start", sortable: true, value: "id" },
+        { text: "Sum", value: "sum" },
+        { text: "Date", value: "date" },
+      ],
     };
   },
-  async mounted(){
-      this.loaded = false;
-      try {
-        const res = await this.$axios.get(url);
-        var results = res.data;
-        var tmplabels = [],tmpdata = [];
-        results.forEach(function(x) {
-          tmplabels.push(x.id);
-          tmpdata.push(parseFloat(x.sum));
-        });
+  async mounted() {
+    this.loaded = false;
+    try {
+      const res = await this.$axios.get(url);
+      var results = res.data;
+      var tmplabels = [],
+        tmpdata = [];
+      results.forEach(function (x) {
+        tmplabels.push(x.date);
+        tmpdata.push(parseFloat(x.sum));
+      });
 
-        var tempData = {
-          labels: tmplabels,
-          datasets: [
-            {
-              label: "Sum",
-              data: tmpdata,
-              borderColor: "rgb(75, 192, 192)",
-              backgroundColor: "rgba(75, 192, 192, 0.2)"
-            }
-          ]
-        };
-        this.jsonchartdata = tempData;
-        this.loaded = true;
-      } catch (e) {
-        console.error(e);
-      }
-  }
+      var tempData = {
+        labels: tmplabels,
+        datasets: [
+          {
+            label: "Sum",
+            data: tmpdata,
+            borderColor: "rgb(75, 192, 192)",
+            backgroundColor: "rgba(75, 192, 192, 0.2)",
+          },
+        ],
+      };
+      this.jsonchartdata = tempData;
+      this.loaded = true;
+
+      const res1 = await this.$axios.get(url);
+        console.log(res1.data1);
+        this.data1 = res1.data1;
+
+
+    } catch (e) {
+      console.error(e);
+    }
+  },
 };
 </script>
