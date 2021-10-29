@@ -68,7 +68,7 @@ export default {
         {
           icon: "mdi-account-details",
           title: "Home",
-          to: "/home",
+          to: "/",
         },
         {
           icon: "mdi-chart-pie ",
