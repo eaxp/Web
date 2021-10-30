@@ -42,8 +42,8 @@
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
         </v-list>
-      </v-menu>
-      <v-icon large style="color: red;">mdi-domain</v-icon>
+      </v-menu> 
+      <button border="10px">Login</button>
     </v-app-bar>
 
     
@@ -69,6 +69,11 @@ export default {
           icon: "mdi-account-details",
           title: "Home",
           to: "/",
+        }, 
+         {
+          icon: "mdi-database",
+          title: "Show data table",
+          to: "/showdata",
         },
         {
           icon: "mdi-chart-pie ",

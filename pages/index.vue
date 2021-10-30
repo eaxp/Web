@@ -1,12 +1,5 @@
 <template>
   <div>
-    <v-row justify="center" align="center">
-      <v-col cols="12">
-        <br /><br /><br />
-        <h3>Welcome to My project</h3>
-        <br /><br /><br />
-      </v-col>
-    </v-row>
     <v-card align="center">
       <br /><br /><br />
       <b-container class="bv-example-row">
@@ -59,9 +52,9 @@
         <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
         <v-row>
           <v-col cols="1"></v-col>
-          <v-col cols="5"><v-card><br><br> aaa <br><br><br></v-card></v-col>
+          <v-col cols="5"><v-card><br><br> <h3>Wering Helmet</h3>  <br> XXX <br><br><br></v-card></v-col>
           <v-col cols="1"></v-col>
-          <v-col cols="5"><v-card><br><br> bbb <br><br><br></v-card></v-col>
+          <v-col cols="5"><v-card><br><br> <h3>Not Wering Helmet</h3>  <br> YYY  <br><br><br></v-card></v-col>
          
         </v-row></v-col>
         <v-col cols="5" align="center"> <br><br>
@@ -73,17 +66,7 @@
           />
         </v-card></v-col>
         <v-col cols="1"></v-col>
-      </v-row>
-
-      
-
-
-
-      <br /><br /><br /><br /><br /><br />
-      <h2>HELMET MONITORING FOR MFU CAMPUS</h2>
-      <h3>Today's statistic of detect hearing a helmet</h3>
-
-      <br /><br /><br /><br /><br /><br />
+      </v-row><br><br><br>
     </v-card>
     <br /><br /><br />
   </div>

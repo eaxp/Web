@@ -22,34 +22,7 @@
         </v-card>
       </v-col>
     </v-row>
-    <div>
-      <h1>page show data tables</h1>
-      <br /><br /><br />
-      <!--<h2 v-if="data">{{data[0].id}}</h2>-->
-
-      <v-card>
-        <v-card-title>
-          Data table
-          <v-spacer></v-spacer>
-          <v-text-field
-            v-model="search"
-            append-icon="mdi-magnify"
-            label="Search"
-            single-lin
-            hide-details
-          >
-          </v-text-field>
-        </v-card-title>
-        <v-data-table
-          :headers="headers1"
-          :items="data1"
-          :search="search"
-          v-if="data1"
-        >
-        </v-data-table>
-        <br /><br /> </v-card
-      ><br /><br /><br />
-    </div>
+    
   </div>
 </template>
 
