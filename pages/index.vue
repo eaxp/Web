@@ -43,7 +43,7 @@
           </v-menu>
           <!--<p>Date in ISO format: <strong>{{ date }}</strong></p>-->
         </v-col>
-        <v-col cols="2"><button>google</button></v-col>
+        <v-col cols="2"><button>Go</button></v-col>
       </v-row>
       
 
