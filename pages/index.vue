@@ -59,11 +59,11 @@
         </v-row></v-col>
         <v-col cols="5" align="center"> <br><br>
           <v-card>
-          <bar-chart
+          <!--<bar-chart
             :barchartdata="barchartdata"
             :barchartoptions="barchartoptions"
             :height="300"
-          />
+          />-->
         </v-card></v-col>
         <v-col cols="1"></v-col>
       </v-row><br><br><br>
