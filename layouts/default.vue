@@ -63,8 +63,8 @@ export default {
         },
         {
           icon: "mdi-camcorder",
-          title: "Realtime camera",
-          to: "/realtimecamera",
+          title: "Add video",
+          to: "/addvideo",
         },
       ],
       itemsS1: [
