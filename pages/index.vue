@@ -13,11 +13,9 @@
             <v-col cols="5"><v-card><br><br> <h3>Wering Helmet</h3>  <br> XXX <br><br><br></v-card></v-col>
             <v-col cols="1"></v-col>
             <v-col cols="5"><v-card><br><br> <h3>Not Wering Helmet</h3>  <br> YYY  <br><br><br></v-card></v-col>
-         
           </v-row>
         </v-col>
-          
-        
+ 
         <v-col lg="3">
           <v-menu
             ref="menu1"
@@ -48,12 +46,13 @@
           </v-menu>
           <!--<p>Date in ISO format: <strong>{{ date }}</strong></p>-->
         </v-col>
-        <v-col cols="2"><button>Go</button></v-col>
+        <v-col cols="2"><button>Go</button>
+        </v-col>
       </v-row>
       
 
     
-      </v-row><br><br><br>
+      <br><br><br>
     </div>
     <br /><br /><br />
   </div>
