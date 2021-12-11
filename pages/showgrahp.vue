@@ -2,7 +2,7 @@
   <div>
     <h1>Dashboard</h1>
     <v-row>
-      <!--<v-col md="12">
+      <v-col md="12">
         <v-card>
           <line-chart
             :linechartdata="chartdata"
@@ -10,7 +10,7 @@
             :height="300"
           />
         </v-card>
-      </v-col>-->
+      </v-col>
       <br /><br />
       <v-col md="12">
         <v-card v-if="loaded">
