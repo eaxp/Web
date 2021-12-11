@@ -1,6 +1,6 @@
 <template>
   <v-app dark v-bind:style="{ background: $vuetify.theme.themes.dark.background}">
-    <v-navigation-drawer v-model="drawer" clipped fixed app>
+    <v-navigation-drawer v-model="drawer" clipped fixed app >
       <v-list>
         <v-list-item  
           v-for="(item, i) in items"
@@ -19,7 +19,8 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar clipped-left fixed app>
+    <v-app-bar clipped-left fixed app 
+    color="red darken-4">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <img src="/logo_mfu.png" alt="user" />
       <v-toolbar-title v-text="title" />
