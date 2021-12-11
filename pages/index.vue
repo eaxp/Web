@@ -4,15 +4,9 @@
       <br /><br /><br />
       <b-container class="bv-example-row">
         <v-row>
-          <v-col cols="2"></v-col>
-
-          <v-col cols="8"><h1>HELMET MONITORING</h1></v-col>
-
-          <v-col cols="8"><h1>HELMET MONITORING FOR MFU CAMPUS</h1></v-col>
-
-          <v-col cols="2"></v-col>
-        </v-row> </b-container
-      ><br />
+          <v-col ><h1>HELMET MONITORING FOR MFU CAMPUS</h1></v-col>
+        </v-row> </b-container>
+        <br />
 
       <v-row>
         <v-col cols="7"></v-col
