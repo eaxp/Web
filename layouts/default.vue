@@ -24,26 +24,7 @@
       <img src="/logo_mfu.png" alt="user" />
       <v-toolbar-title v-text="title" />
 
-      <v-spacer />
-
-      <v-avatar>
-        <img src="/account-circle.png" alt="user" />
-      </v-avatar>
-
-      <v-menu bottom left>
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn icon v-bind="attrs" v-on="on">
-            <v-icon>mdi-dots-vertical</v-icon>
-          </v-btn>
-        </template>
-
-        <v-list>
-          <v-list-item v-for="(item, i) in itemsS1" :key="i" :to="item.to">
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu> 
-      <button border="10px">Login</button>
+      <v-spacer />     
     </v-app-bar>
 
     
@@ -91,18 +72,7 @@ export default {
           to: "/addvideo",
         },
       ],
-      itemsS1: [
-        {
-          icon: "mdi-account-details",
-          title: "show...",
-          to: "/showdata",
-        },
-        {
-          icon: "mdi-database",
-          title: "log out",
-          to: "/",
-        },
-      ],
+      
       miniVariant: false,
       right: true,
       rightDrawer: false,
