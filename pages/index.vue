@@ -1,16 +1,23 @@
 <template>
   <div>
-    <v-card align="center">
-      <br /><br /><br />
-      <b-container class="bv-example-row">
-        <v-row>
-          <v-col ><h1>HELMET MONITORING FOR MFU CAMPUS</h1></v-col>
-        </v-row> </b-container>
-        <br />
-
+    <br /><br />
+    <h1 align="center">HELMET MONITORING FOR MFU CAMPUS</h1>
+    <br /><br />
+    <div>
       <v-row>
-        <v-col cols="7"></v-col
-        >
+        <v-col cols="7" align="center">
+          <h2>Today's statistic of detect hearing a helmet</h2><br><br>
+          <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
+          <v-row>
+            <v-col cols="1"></v-col>
+            <v-col cols="5"><v-card><br><br> <h3>Wering Helmet</h3>  <br> XXX <br><br><br></v-card></v-col>
+            <v-col cols="1"></v-col>
+            <v-col cols="5"><v-card><br><br> <h3>Not Wering Helmet</h3>  <br> YYY  <br><br><br></v-card></v-col>
+         
+          </v-row>
+        </v-col>
+          
+        
         <v-col lg="3">
           <v-menu
             ref="menu1"
@@ -45,27 +52,9 @@
       </v-row>
       
 
-      <v-row>
-        <v-col cols="6" align="center"><h2>Today's statistic of detect hearing a helmet</h2><br><br>
-        <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
-        <v-row>
-          <v-col cols="1"></v-col>
-          <v-col cols="5"><v-card><br><br> <h3>Wering Helmet</h3>  <br> XXX <br><br><br></v-card></v-col>
-          <v-col cols="1"></v-col>
-          <v-col cols="5"><v-card><br><br> <h3>Not Wering Helmet</h3>  <br> YYY  <br><br><br></v-card></v-col>
-         
-        </v-row></v-col>
-        <v-col cols="5" align="center"> <br><br>
-          <v-card>
-          <!--<bar-chart
-            :barchartdata="barchartdata"
-            :barchartoptions="barchartoptions"
-            :height="300"
-          />-->
-        </v-card></v-col>
-        <v-col cols="1"></v-col>
+    
       </v-row><br><br><br>
-    </v-card>
+    </div>
     <br /><br /><br />
   </div>
 </template>
