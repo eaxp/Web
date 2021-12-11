@@ -65,12 +65,12 @@ export default {
         },
         {
           icon: "mdi-circle-outline",
-          title: "Null page",
+          title: "test01",
           to: "/login",
         },
         {
           icon: "mdi-camcorder",
-          title: "Add video",
+          title: "test02",
           to: "/addvideo",
         },
       ],
