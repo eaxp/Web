@@ -50,17 +50,17 @@ export default {
       items: [
         {
           icon: "mdi-account-details",
-          title: "Home",
+          title: "หน้าหลัก",
           to: "/",
         }, 
          {
           icon: "mdi-database",
-          title: "Show data table",
+          title: "ตารางข้อมูล",
           to: "/showdata",
         },
         {
           icon: "mdi-chart-pie ",
-          title: "Dashboard",
+          title: "แดชบอร์ด",
           to: "/showgrahp",
         },
         {

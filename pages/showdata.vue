@@ -1,6 +1,6 @@
 <template>
   <div><br>
-    <h1 >page show data tables</h1>
+    <h1 >ตารางข้อมูลแสดงการสวมหมวกนิรภัยของผู้ใช้รถจักรยานยนต์</h1>
     <br />
     <!--<h2 v-if="data">{{data[0].id}}</h2>-->
 

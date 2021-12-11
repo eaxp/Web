@@ -6,13 +6,13 @@
     <div>
       <v-row>
         <v-col cols="7" align="center">
-          <h2>Today's statistic of detect hearing a helmet</h2><br><br>
+          <h2>จำนวนการสวมหมวกนิรภัยของผู้ใช้รถจักรยานยนต์</h2><br><br>
           <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
           <v-row>
             <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card><br><br> <h3>Wering Helmet</h3>  <br> XXX <br><br><br></v-card></v-col>
+            <v-col cols="5"><v-card><br><br> <h3>สวมหมวกนิรภัย</h3>  <br> XXX <br><br><br></v-card></v-col>
             <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card><br><br> <h3>Not Wering Helmet</h3>  <br> YYY  <br><br><br></v-card></v-col>
+            <v-col cols="5"><v-card><br><br> <h3>ไม่สวมหมวกนิรภัย</h3>  <br> YYY  <br><br><br></v-card></v-col>
           </v-row>
         </v-col>
  
@@ -29,8 +29,8 @@
             <template v-slot:activator="{ on, attrs }">
               <v-text-field
                 v-model="dateFormatted"
-                label="Date"
-                hint="MM/DD/YYYY format"
+                label="วันที่"
+                hint="วัน/เดือน/ปี"
                 persistent-hint
                 prepend-icon="mdi-calendar"
                 v-bind="attrs"
