@@ -5,7 +5,11 @@
       <b-container class="bv-example-row">
         <v-row>
           <v-col cols="2"></v-col>
+<<<<<<< HEAD
           <v-col cols="8"><h1>HELMET MONITORING</h1></v-col>
+=======
+          <v-col cols="8"><h1>HELMET MONITORING FOR MFU CAMPUS</h1></v-col>
+>>>>>>> parent of bbf0dcf (แก้)
           <v-col cols="2"></v-col>
         </v-row> </b-container
       ><br />
@@ -52,9 +56,9 @@
         <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
         <v-row>
           <v-col cols="1"></v-col>
-          <v-col cols="5"><v-card><br><br> <h3>Wering Helmet</h3>  <br> *** <br><br><br></v-card></v-col>
+          <v-col cols="5"><v-card><br><br> <h3>Wering Helmet</h3>  <br> XXX <br><br><br></v-card></v-col>
           <v-col cols="1"></v-col>
-          <v-col cols="5"><v-card><br><br> <h3>Not Wering Helmet</h3>  <br> ***  <br><br><br></v-card></v-col>
+          <v-col cols="5"><v-card><br><br> <h3>Not Wering Helmet</h3>  <br> YYY  <br><br><br></v-card></v-col>
          
         </v-row></v-col>
         <v-col cols="5" align="center"> <br><br>
