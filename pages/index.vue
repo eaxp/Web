@@ -10,9 +10,9 @@
           <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
           <v-row>
             <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card><br><br> <h3>สวมหมวกนิรภัย</h3>  <br> XXX <br><br><br></v-card></v-col>
+            <v-col cols="5"><v-card><br><br> <h3>สวมหมวกนิรภัย</h3>  <br> <h3>{{data[0].withhelmat}}</h3> <br><br><br></v-card></v-col>
             <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card><br><br> <h3>ไม่สวมหมวกนิรภัย</h3>  <br> YYY  <br><br><br></v-card></v-col>
+            <v-col cols="5"><v-card><br><br> <h3>ไม่สวมหมวกนิรภัย</h3>  <br>  <h3>{{data[0].withouthelmat}}</h3> <br><br><br></v-card></v-col>
           </v-row>
         </v-col>
  
@@ -59,10 +59,12 @@
 </template>
   
 <script>
-const url = "/datahome.json";
+
+const url = "/aaaaa.json";
 export default {
   data() {
     return {
+      data: null,
       value: "",  
     };
   },
@@ -80,8 +82,11 @@ export default {
   }),
 
   computed: {
-    computedDateFormatted() {
-      return this.formatDate(this.date);
+    //computedDateFormatted() {
+      //return this.formatDate(this.date);
+    //},
+    userLastCount() {
+      return this.lineData[this.lineData.length - 1].data;
     },
   },
 
@@ -107,23 +112,31 @@ export default {
     currentDateTime() {
       const current = new Date();
       const date =
-        current.getFullYear() +
+        current.getDate() +
         "-" +
         (current.getMonth() + 1) +
         "-" +
-        current.getDate();
+        current.getFullYear();
       const time =
         current.getHours() +
         " : " +
         current.getMinutes() +
         " : " +
         current.getSeconds();
-      const dateTime = date + " " + time;
+      const dateTime = date + "  " + time;
 
       return dateTime;
     },
   },
+  async mounted() {
+    try {
+      const res = await this.$axios.get(url);
+      console.log(res.data);
+      this.data = res.data;
+    } catch (e) {
+      console.error(e);
+    }
+  },
 };
-
 </script>
 

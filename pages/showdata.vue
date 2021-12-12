@@ -1,8 +1,8 @@
 <template>
   <div><br>
     <h1 >ตารางข้อมูลแสดงการสวมหมวกนิรภัยของผู้ใช้รถจักรยานยนต์</h1>
-    <br />
-    <!--<h2 v-if="data">{{data[0].id}}</h2>-->
+    <br>
+    <h2 v-if="data">--- {{data[0].date}} ---</h2><br><br><br>
 
     <v-card>
       <v-card-title>
@@ -55,8 +55,8 @@ export default {
       ],
       headers1: [
         { text: "Date", align: "start", sortable: true, value: "date" },
-        { text: "With Helmat", value: "with helmat" },
-        { text: "Without Helmat", value: "without helmat" },
+        { text: "With Helmat", value: "withhelmat" },
+        { text: "Without Helmat", value: "withouthelmat" },
         { text: "Sum (With/Without Helmat)", value: "sum" },
       ],
     };
