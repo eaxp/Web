@@ -1,0 +1,122 @@
+[
+  {
+    "date": "21/05/2021",
+    "withhelmat": 36,
+    "withouthelmat": 68,
+    "sum": 104
+  },
+  {
+    "date": "22/05/2021",
+    "withhelmat": 84,
+    "withouthelmat": 5,
+    "sum": 89
+  },
+  {
+    "date": "23/05/2021",
+    "withhelmat": 39,
+    "withouthelmat": 92,
+    "sum": 131
+  },
+  {
+    "date": "24/05/2021",
+    "withhelmat": 31,
+    "withouthelmat": 47,
+    "sum": 78
+  },
+  {
+    "date": "25/05/2021",
+    "withhelmat": 95,
+    "withouthelmat": 33,
+    "sum": 128
+  },
+  {
+    "date": "26/05/2021",
+    "withhelmat": 91,
+    "withouthelmat": 51,
+    "sum": 142
+  },
+  {
+    "date": "27/05/2021",
+    "withhelmat": 48,
+    "withouthelmat": 16,
+    "sum": 64
+  },
+  {
+    "date": "28/05/2021",
+    "withhelmat": 15,
+    "withouthelmat": 42,
+    "sum": 57
+  },
+  {
+    "date": "29/05/2021",
+    "withhelmat": 13,
+    "withouthelmat": 92,
+    "sum": 105
+  },
+  {
+    "date": "30/25/2021",
+    "withhelmat": 80,
+    "withouthelmat": 62,
+    "sum": 142
+  },
+  {
+    "date": "31/05/2021",
+    "withhelmat": 47,
+    "withouthelmat": 85,
+    "sum": 132
+  },
+  {
+    "date": "01/06/2021",
+    "withhelmat": 50,
+    "withouthelmat": 18,
+    "sum": 68
+  },
+  {
+    "date": "02/06/2021",
+    "withhelmat": 93,
+    "withouthelmat": 90,
+    "sum": 183
+  },
+  {
+    "date": "03/06/2021",
+    "withhelmat": 57,
+    "withouthelmat": 50,
+    "sum": 107
+  },
+  {
+    "date": "04/06/2021",
+    "withhelmat": 70,
+    "withouthelmat": 10,
+    "sum": 80
+  },
+  {
+    "date": "05/06/2021",
+    "withhelmat": 66,
+    "withouthelmat": 12,
+    "sum": 78
+  },
+  {
+    "date": "06/06/2021",
+    "withhelmat": 95,
+    "withouthelmat": 52,
+    "sum": 147
+  },
+  {
+    "date": "07/06/2021",
+    "withhelmat": 45,
+    "withouthelmat": 59,
+    "sum": 104
+  },
+  {
+    "date": "08/06/2021",
+    "withhelmat": 83,
+    "withouthelmat": 79,
+    "sum": 162
+  },
+  {
+    "date": "09/06/2021",
+    "withhelmat": 54,
+    "withouthelmat": 20,
+    "sum": 74
+  }
+]

@@ -2,7 +2,7 @@
   <div><br>
     <h1 >ตารางข้อมูลแสดงการสวมหมวกนิรภัยของผู้ใช้รถจักรยานยนต์</h1>
     <br>
-    <h2 v-if="data">--- {{data[0].date}} ---</h2><br><br><br>
+    <!--<h2 v-if="data">--- {{data[0].date}} ---</h2><br>-->
 
     <v-card>
       <v-card-title>

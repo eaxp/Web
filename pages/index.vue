@@ -16,11 +16,11 @@
           </v-row>
         </v-col>
         <v-col cols="5" align="center"><br><br>
-          <h3>show g ล่าสุด</h3><br><br>
+          <h3>xxxxxx</h3><br><br>
           <v-row>
             <v-col cols="1"></v-col>
             <v-col cols="11" align="center">
-              <v-card>
+              <v-card >
                 <bar-chart
                   :barchartdata="barchartdata"
                   :barchartoptions="barchartoptions"
@@ -50,11 +50,11 @@ export default {
         datasets: [],
       },
       barchartdata: {
-        labels: ["Red", "Blue"],
+        labels: ["with helmat", "without helmat"],
         datasets: [
-          {
+          { 
             label: "# of Votes",
-            data: [12, 19],
+            data: [54, 20],
             backgroundColor: [
               "rgba(255, 99, 132, 0.2)",
               "rgba(54, 162, 235, 0.2)",
@@ -83,11 +83,18 @@ export default {
     };
   },
   async mounted() {
+    this.loaded = false;
     try {
       const res = await this.$axios.get(url);
       console.log(res.data);
       this.data = res.data;
-      return data
+      const res1 = await this.$axios.get(url);
+      var results = res1.data;
+      var tmplabels = [],tmpdata = [];
+      results.forEach(function(x) {
+        tmplabels.push(x.date);
+        tmpdata.push(parseFloat(x.sum));
+      });
     } catch (e) {
       console.error(e);
     }

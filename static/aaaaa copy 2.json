@@ -247,9 +247,9 @@
   },
   {
     "date": "01/06/2021",
-    "withhelmat": 7,
+    "withhelmat": 50,
     "withouthelmat": 18,
-    "sum": 25
+    "sum": 68
   },
   {
     "date": "02/06/2021",
@@ -296,7 +296,7 @@
   {
     "date": "09/06/2021",
     "withhelmat": 54,
-    "withouthelmat": 20,
-    "sum": 74
+    "withouthelmat": 54,
+    "sum": 108
   }
 ]

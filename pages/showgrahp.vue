@@ -3,49 +3,44 @@
     <h1>Dashboard</h1>
     <v-row>
       <v-col md="12">
-        <v-card>
-          <line-chart
-            :linechartdata="chartdata"
-            :linechartoptions="options"
-            :height="300"
-          />
-        </v-card>
-      </v-col>
-      <br /><br />
-      <v-col md="12">
         <v-card v-if="loaded">
           <line-chart
             :linechartdata="jsonchartdata"
             :lineoptions="barchartoptions"
-            :height="130"
-          />
+            :height="200"/>
         </v-card>
       </v-col>
+      <!--<v-col md="6">
+        <v-card v-if="loaded">
+          <line-chart
+            :linechartdata="jsonchartdata"
+            :lineoptions="barchartoptions"
+            :height="200"/>
+        </v-card>
+      </v-col>-->
     </v-row>
     
   </div>
 </template>
 
 <script>
-const url = "/datatest.json";
+const url = "/aaa20.json";
 
 export default {
   data() {
-    return {
-      chartdata: {
-        labels: ["January", "February", "March", "April"],
-        datasets: [
-          {
-            label: "Data One",
-            borderColor: "#f87979",
-            data: [40, 20, 50, 10],
-            fill: false,
-          },
-        ],
-      },
-      options: {
+    return { 
+     barchartoptions: {
         responsive: true,
         maintainAspectRatio: false,
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true
+              }
+            }
+          ]
+        }
       },
       loaded: false,
       apichartdata: {
