@@ -10,46 +10,29 @@
           <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
           <v-row>
             <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card><br><br> <h3>สวมหมวกนิรภัย</h3>  <br> <h3 v-if="data"> xxx{{data[0].sum}}</h3> <br><br><br></v-card></v-col>
+            <v-col cols="5"><v-card><br><br> <h3>สวมหมวกนิรภัย</h3>  <br> <h3 v-if="data">{{data[49].withhelmat}}</h3> <br><br><br></v-card></v-col>
             <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card><br><br> <h3>ไม่สวมหมวกนิรภัย</h3>  <br>  <h3 >  xxxx</h3> <br><br><br></v-card></v-col>
+            <v-col cols="5"><v-card><br><br> <h3>ไม่สวมหมวกนิรภัย</h3><br> <h3 v-if="data">{{data[49].withouthelmat}}</h3> <br><br><br></v-card></v-col>
           </v-row>
         </v-col>
- 
-        <v-col lg="3">
-          <v-menu
-            ref="menu1"
-            v-model="menu1"
-            :close-on-content-click="false"
-            transition="scale-transition"
-            offset-y
-            max-width="290px"
-            min-width="auto"
-          >
-            <template v-slot:activator="{ on, attrs }">
-              <v-text-field
-                v-model="dateFormatted"
-                label="วันที่"
-                hint="วัน/เดือน/ปี"
-                persistent-hint
-                prepend-icon="mdi-calendar"
-                v-bind="attrs"
-                @blur="date = parseDate(dateFormatted)"
-                v-on="on"
-              ></v-text-field>
-            </template>
-            <v-date-picker
-              v-model="date"
-              no-title
-              @input="menu1 = false"
-            ></v-date-picker>
-          </v-menu>
-          <!--<p>Date in ISO format: <strong>{{ date }}</strong></p>-->
-        </v-col>
-        <v-col cols="2"><button>Go</button>
+        <v-col cols="5" align="center"><br><br>
+          <h3>show g ล่าสุด</h3><br><br>
+          <v-row>
+            <v-col align="center">
+              <v-card v-if="loaded">
+                <line-chart
+                  :linechartdata="jsonchartdata"
+                  :lineoptions="barchartoptions"
+                  :height="130"
+                />
+              </v-card>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
-      
+      <v-row>
+        aaaaa
+      </v-row>
 
     
       <br><br><br>
@@ -66,6 +49,23 @@ export default {
     return {
       data: null,
       value: "",
+      jsonchartdata: {
+        labels: [],
+        datasets: [],
+      },
+      barchartoptions: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true
+              }
+            }
+          ]
+        }
+      },
     };
   },
   async mounted() {
@@ -78,19 +78,8 @@ export default {
       console.error(e);
     }
   },
-  data: (vm) => ({
-    date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
-      .toISOString()
-      .substr(0, 10),
-    dateFormatted: vm.formatDate(
-      new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
-        .toISOString()
-        .substr(0, 10)
-    ),
-    menu1: false,
-    menu2: false,
-  }),
 
+  
   computed: {
     //computedDateFormatted() {
       //return this.formatDate(this.date);
