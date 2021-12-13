@@ -18,15 +18,16 @@
         <v-col cols="5" align="center"><br><br>
           <h3>show g ล่าสุด</h3><br><br>
           <v-row>
-            <v-col align="center">
-              <v-card v-if="loaded">
-                <line-chart
-                  :linechartdata="jsonchartdata"
-                  :lineoptions="barchartoptions"
-                  :height="130"
-                />
+            <v-col cols="1"></v-col>
+            <v-col cols="11" align="center">
+              <v-card>
+                <bar-chart
+                  :barchartdata="barchartdata"
+                  :barchartoptions="barchartoptions"
+                  :height="300"/>
               </v-card>
             </v-col>
+            
           </v-row>
         </v-col>
       </v-row>
@@ -52,6 +53,32 @@ export default {
       jsonchartdata: {
         labels: [],
         datasets: [],
+      },
+      barchartdata: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [
+          {
+            label: "# of Votes",
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+              "rgba(255, 99, 132, 0.2)",
+              "rgba(54, 162, 235, 0.2)",
+              "rgba(255, 206, 86, 0.2)",
+              "rgba(75, 192, 192, 0.2)",
+              "rgba(153, 102, 255, 0.2)",
+              "rgba(255, 159, 64, 0.2)"
+            ],
+            borderColor: [
+              "rgba(255, 99, 132, 1)",
+              "rgba(54, 162, 235, 1)",
+              "rgba(255, 206, 86, 1)",
+              "rgba(75, 192, 192, 1)",
+              "rgba(153, 102, 255, 1)",
+              "rgba(255, 159, 64, 1)"
+            ],
+            borderWidth: 1
+          }
+        ]
       },
       barchartoptions: {
         responsive: true,
