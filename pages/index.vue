@@ -39,7 +39,7 @@
   
 <script>
 
-const url = "/aaaaa copy.json";
+const url = "/aaaaa.json";
 export default {
   data() {
     return {
