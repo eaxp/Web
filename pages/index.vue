@@ -16,7 +16,7 @@
           </v-row>
         </v-col>
         <v-col cols="5" align="center"><br><br>
-          <h3>xxxxxx</h3><br><br>
+          <h3> {{currentDate()}}</h3><br><br>
           <v-row>
             <v-col cols="1"></v-col>
             <v-col cols="11" align="center">
@@ -146,6 +146,18 @@ export default {
       const dateTime = date + "  " + time;
 
       return dateTime;
+    },
+    currentDate() {
+      const current = new Date();
+      const date =
+        current.getDate() +
+        "-" +
+        (current.getMonth() + 1) +
+        "-" +
+        current.getFullYear();      
+      const dateTime1 = date ;
+
+      return dateTime1;
     },
   },
 };
