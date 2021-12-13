@@ -2,7 +2,7 @@
   <div><br>
     <h1 >ตารางข้อมูลแสดงการสวมหมวกนิรภัยของผู้ใช้รถจักรยานยนต์</h1>
     <br />
-    <!--<h2 v-if="data">{{data[0].id}}</h2>-->
+    <h2 v-if="data">{{data[0].sum}} aaa {{data[0].withhelmat}} aaa {{data[0].withouthelmat}} aaa</h2>
 
     <v-card>
       <v-card-title>
@@ -55,17 +55,19 @@ export default {
       ],
       headers1: [
         { text: "Date", align: "start", sortable: true, value: "date" },
-        { text: "With Helmat", value: "with helmat" },
-        { text: "Without Helmat", value: "without helmat" },
+        { text: "With Helmat", value: "withhelmat" },
+        { text: "Without Helmat", value: "withouthelmat" },
         { text: "Sum (With/Without Helmat)", value: "sum" },
       ],
     };
   },
   async mounted() {
+    this.loaded = false;
     try {
       const res = await this.$axios.get(url);
       console.log(res.data);
       this.data = res.data;
+      this.loaded = true;
     } catch (e) {
       console.error(e);
     }

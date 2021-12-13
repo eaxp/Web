@@ -10,9 +10,9 @@
           <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
           <v-row>
             <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card><br><br> <h3>สวมหมวกนิรภัย</h3>  <br> <h3>{{data[0].withhelmat}}</h3> <br><br><br></v-card></v-col>
+            <v-col cols="5"><v-card><br><br> <h3>สวมหมวกนิรภัย</h3>  <br> <h3 v-if="data"> xxx{{data[0].sum}}</h3> <br><br><br></v-card></v-col>
             <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card><br><br> <h3>ไม่สวมหมวกนิรภัย</h3>  <br>  <h3>{{data[0].withouthelmat}}</h3> <br><br><br></v-card></v-col>
+            <v-col cols="5"><v-card><br><br> <h3>ไม่สวมหมวกนิรภัย</h3>  <br>  <h3 >  xxxx</h3> <br><br><br></v-card></v-col>
           </v-row>
         </v-col>
  
@@ -60,13 +60,23 @@
   
 <script>
 
-const url = "/aaaaa.json";
+const url = "/aaaaa copy.json";
 export default {
   data() {
     return {
       data: null,
-      value: "",  
+      value: "",
     };
+  },
+  async mounted() {
+    try {
+      const res = await this.$axios.get(url);
+      console.log(res.data);
+      this.data = res.data;
+      return data
+    } catch (e) {
+      console.error(e);
+    }
   },
   data: (vm) => ({
     date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
@@ -127,15 +137,6 @@ export default {
 
       return dateTime;
     },
-  },
-  async mounted() {
-    try {
-      const res = await this.$axios.get(url);
-      console.log(res.data);
-      this.data = res.data;
-    } catch (e) {
-      console.error(e);
-    }
   },
 };
 </script>

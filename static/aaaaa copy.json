@@ -1,0 +1,302 @@
+[
+  {
+    "date": "21/04/2021",
+    "withhelmat": 29,
+    "withouthelmat": 11,
+    "sum": 40
+  },
+  {
+    "date": "22/04/2021",
+    "withhelmat": 80,
+    "withouthelmat": 55,
+    "sum": 135
+  },
+  {
+    "date": "23/04/2021",
+    "withhelmat": 12,
+    "withouthelmat": 87,
+    "sum": 99
+  },
+  {
+    "date": "24/04/2021",
+    "withhelmat": 74,
+    "withouthelmat": 29,
+    "sum": 103
+  },
+  {
+    "date": "25/04/2021",
+    "withhelmat": 84,
+    "withouthelmat": 85,
+    "sum": 169
+  },
+  {
+    "date": "26/04/2021",
+    "withhelmat": 68,
+    "withouthelmat": 34,
+    "sum": 102
+  },
+  {
+    "date": "27/04/2021",
+    "withhelmat": 7,
+    "withouthelmat": 70,
+    "sum": 77
+  },
+  {
+    "date": "28/04/2021",
+    "withhelmat": 78,
+    "withouthelmat": 26,
+    "sum": 104
+  },
+  {
+    "date": "29/04/2021",
+    "withhelmat": 73,
+    "withouthelmat": 19,
+    "sum": 92
+  },
+  {
+    "date": "30/04/2021",
+    "withhelmat": 10,
+    "withouthelmat": 1,
+    "sum": 11
+  },
+  {
+    "date": "01/05/2021",
+    "withhelmat": 62,
+    "withouthelmat": 74,
+    "sum": 136
+  },
+  {
+    "date": "02/05/2021",
+    "withhelmat": 15,
+    "withouthelmat": 13,
+    "sum": 28
+  },
+  {
+    "date": "03/05/2021",
+    "withhelmat": 51,
+    "withouthelmat": 21,
+    "sum": 72
+  },
+  {
+    "date": "04/05/2021",
+    "withhelmat": 100,
+    "withouthelmat": 85,
+    "sum": 185
+  },
+  {
+    "date": "05/05/2021",
+    "withhelmat": 19,
+    "withouthelmat": 23,
+    "sum": 42
+  },
+  {
+    "date": "06/05/2021",
+    "withhelmat": 81,
+    "withouthelmat": 9,
+    "sum": 90
+  },
+  {
+    "date": "07/05/2021",
+    "withhelmat": 37,
+    "withouthelmat": 50,
+    "sum": 87
+  },
+  {
+    "date": "08/05/2021",
+    "withhelmat": 24,
+    "withouthelmat": 11,
+    "sum": 35
+  },
+  {
+    "date": "09/05/2021",
+    "withhelmat": 26,
+    "withouthelmat": 18,
+    "sum": 44
+  },
+  {
+    "date": "10/05/2021",
+    "withhelmat": 47,
+    "withouthelmat": 98,
+    "sum": 145
+  },
+  {
+    "date": "11/05/2021",
+    "withhelmat": 10,
+    "withouthelmat": 55,
+    "sum": 65
+  },
+  {
+    "date": "12/05/2021",
+    "withhelmat": 49,
+    "withouthelmat": 19,
+    "sum": 68
+  },
+  {
+    "date": "13/05/2021",
+    "withhelmat": 39,
+    "withouthelmat": 45,
+    "sum": 84
+  },
+  {
+    "date": "14/05/2021",
+    "withhelmat": 33,
+    "withouthelmat": 65,
+    "sum": 98
+  },
+  {
+    "date": "15/05/2021",
+    "withhelmat": 45,
+    "withouthelmat": 68,
+    "sum": 113
+  },
+  {
+    "date": "16/05/2021",
+    "withhelmat": 51,
+    "withouthelmat": 7,
+    "sum": 58
+  },
+  {
+    "date": "17/05/2021",
+    "withhelmat": 46,
+    "withouthelmat": 30,
+    "sum": 76
+  },
+  {
+    "date": "18/05/2021",
+    "withhelmat": 3,
+    "withouthelmat": 24,
+    "sum": 27
+  },
+  {
+    "date": "19/05/2021",
+    "withhelmat": 45,
+    "withouthelmat": 29,
+    "sum": 74
+  },
+  {
+    "date": "20/05/2021",
+    "withhelmat": 12,
+    "withouthelmat": 32,
+    "sum": 44
+  },
+  {
+    "date": "21/05/2021",
+    "withhelmat": 36,
+    "withouthelmat": 68,
+    "sum": 104
+  },
+  {
+    "date": "22/05/2021",
+    "withhelmat": 84,
+    "withouthelmat": 5,
+    "sum": 89
+  },
+  {
+    "date": "23/05/2021",
+    "withhelmat": 39,
+    "withouthelmat": 92,
+    "sum": 131
+  },
+  {
+    "date": "24/05/2021",
+    "withhelmat": 31,
+    "withouthelmat": 47,
+    "sum": 78
+  },
+  {
+    "date": "25/05/2021",
+    "withhelmat": 95,
+    "withouthelmat": 33,
+    "sum": 128
+  },
+  {
+    "date": "26/05/2021",
+    "withhelmat": 91,
+    "withouthelmat": 51,
+    "sum": 142
+  },
+  {
+    "date": "27/05/2021",
+    "withhelmat": 48,
+    "withouthelmat": 16,
+    "sum": 64
+  },
+  {
+    "date": "28/05/2021",
+    "withhelmat": 15,
+    "withouthelmat": 42,
+    "sum": 57
+  },
+  {
+    "date": "29/05/2021",
+    "withhelmat": 13,
+    "withouthelmat": 92,
+    "sum": 105
+  },
+  {
+    "date": "30/25/2021",
+    "withhelmat": 80,
+    "withouthelmat": 62,
+    "sum": 142
+  },
+  {
+    "date": "31/05/2021",
+    "withhelmat": 47,
+    "withouthelmat": 85,
+    "sum": 132
+  },
+  {
+    "date": "01/06/2021",
+    "withhelmat": 7,
+    "withouthelmat": 18,
+    "sum": 25
+  },
+  {
+    "date": "02/06/2021",
+    "withhelmat": 93,
+    "withouthelmat": 90,
+    "sum": 183
+  },
+  {
+    "date": "03/06/2021",
+    "withhelmat": 57,
+    "withouthelmat": 50,
+    "sum": 107
+  },
+  {
+    "date": "04/06/2021",
+    "withhelmat": 70,
+    "withouthelmat": 10,
+    "sum": 80
+  },
+  {
+    "date": "05/06/2021",
+    "withhelmat": 66,
+    "withouthelmat": 12,
+    "sum": 78
+  },
+  {
+    "date": "06/06/2021",
+    "withhelmat": 95,
+    "withouthelmat": 52,
+    "sum": 147
+  },
+  {
+    "date": "07/06/2021",
+    "withhelmat": 45,
+    "withouthelmat": 59,
+    "sum": 104
+  },
+  {
+    "date": "08/06/2021",
+    "withhelmat": 83,
+    "withouthelmat": 79,
+    "sum": 162
+  },
+  {
+    "date": "09/06/2021",
+    "withhelmat": 54,
+    "withouthelmat": 54,
+    "sum": 108
+  }
+]
