@@ -30,12 +30,7 @@
             
           </v-row>
         </v-col>
-      </v-row>
-      <v-row>
-        aaaaa
-      </v-row>
-
-    
+      </v-row> 
       <br><br><br>
     </div>
     <br /><br /><br />
