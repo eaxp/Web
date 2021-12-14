@@ -10,9 +10,9 @@
           <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
           <v-row>
             <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card><br><br> <h3>สวมหมวกนิรภัย</h3>  <br> <h3 v-if="data">{{data[49].withhelmat}}</h3> <br><br><br></v-card></v-col>
+            <v-col cols="5"><v-card><br><br> <h3>สวมหมวกนิรภัย</h3>  <br> <h3 v-if="data">{{data[data.length-1].withhelmat}}</h3> <br><br><br></v-card></v-col>
             <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card><br><br> <h3>ไม่สวมหมวกนิรภัย</h3><br> <h3 v-if="data">{{data[49].withouthelmat}}</h3> <br><br><br></v-card></v-col>
+            <v-col cols="5"><v-card><br><br> <h3>ไม่สวมหมวกนิรภัย</h3><br> <h3 v-if="data">{{data[data.length-1].withouthelmat}}</h3> <br><br><br></v-card></v-col>
           </v-row>
         </v-col>
         <v-col cols="5" align="center"><br><br>
@@ -39,7 +39,7 @@
   
 <script>
 
-const url = "/aaaaa.json";
+const url = "/aaaaa copy 2.json";
 export default {
   data() {
     return {
@@ -54,7 +54,7 @@ export default {
         datasets: [
           { 
             label: "# of Votes",
-            data: [54, 20],
+            data: [60, 54],
             backgroundColor: [
               "rgba(255, 99, 132, 0.2)",
               "rgba(54, 162, 235, 0.2)",
