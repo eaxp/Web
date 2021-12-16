@@ -2,7 +2,9 @@
   <v-app
     dark
     v-bind:style="{ background: $vuetify.theme.themes.dark.background }"
+   
   >
+
     <v-navigation-drawer
       v-model="drawer"
       clipped
