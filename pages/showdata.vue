@@ -55,8 +55,8 @@ export default {
       ],
       headers1: [
         { text: "Date", align: "start", sortable: true, value: "date" },
-        { text: "With Helmat", value: "withhelmat" },
-        { text: "Without Helmat", value: "withouthelmat" },
+        { text: "With Helmet", value: "withhelmet" },
+        { text: "Without Helmet", value: "withouthelmet" },
         { text: "Sum (With/Without Helmat)", value: "sum" },
       ],
     };

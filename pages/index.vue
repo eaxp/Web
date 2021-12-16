@@ -50,7 +50,7 @@ export default {
         datasets: [],
       },
       barchartdata: {
-        labels: ["with helmat", "without helmat"],
+        labels: ["with helmet", "without helmet"],
         datasets: [
           { 
             label: "# of Votes",
