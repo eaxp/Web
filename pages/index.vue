@@ -10,9 +10,9 @@
           <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
           <v-row>
             <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card color="green lighten-1"><br><br> <h3>สวมหมวกนิรภัย</h3>  <br> <h3 v-if="data">{{data[data.length-1].withhelmat}}</h3> <br><br><br></v-card></v-col>
+            <v-col cols="5"><v-card color="green lighten-1"><br><br> <h3>สวมหมวกนิรภัย</h3>  <br> <h3 v-if="data">{{data[data.length-1].withhelmet}}</h3> <br><br><br></v-card></v-col>
             <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card color="red lighten-1"><br><br> <h3>ไม่สวมหมวกนิรภัย</h3><br> <h3 v-if="data">{{data[data.length-1].withouthelmat}}</h3> <br><br><br></v-card></v-col>
+            <v-col cols="5"><v-card color="red lighten-1"><br><br> <h3>ไม่สวมหมวกนิรภัย</h3><br> <h3 v-if="data">{{data[data.length-1].withouthelmet}}</h3> <br><br><br></v-card></v-col>
           </v-row>
         </v-col>
         <v-col cols="5" align="center"><br><br>
