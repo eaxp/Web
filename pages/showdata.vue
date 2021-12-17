@@ -1,6 +1,6 @@
 <template>
   <div><br>
-    <h1 >ตารางข้อมูลแสดงการสวมหมวกนิรภัยของผู้ใช้รถจักรยานยนต์</h1>
+    <h1 >The data table shows the helmet wearing of motorcycle users.</h1>
     <br>
     <!--<h2 v-if="data">--- {{data[0].date}} ---</h2><br>-->
 

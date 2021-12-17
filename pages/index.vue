@@ -9,33 +9,32 @@
     <br /><br />
     <div>
       <v-row>
-        <v-col cols="7" align="center">
-          <h2 class="display-1">จำนวนการสวมหมวกนิรภัยของผู้ใช้รถจักรยานยนต์</h2><br><br>
+        <v-col cols="12" align="center">
+          <h2 class="display-1">Number of motorcycle users wearing helmets</h2><br><br>
           <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
-          <v-row>
-            <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card color="green lighten-1"><br><img src="/racing-helmet.png" alt="user" /><br> <h3>สวมหมวกนิรภัย</h3>  <br> <h3 v-if="data">{{data[data.length-1].withhelmet}}</h3> <br></v-card></v-col>
-            <v-col cols="1"></v-col>
-            <v-col cols="5"><v-card color="red lighten-1"><br><img src="/face-man-profile.png" alt="user" /><br> <h3>ไม่สวมหมวกนิรภัย</h3><br> <h3 v-if="data">{{data[data.length-1].withouthelmet}}</h3> <br></v-card></v-col>
+          <v-row align="center">
+            <v-col cols="2"></v-col>
+            <v-col cols="3"><v-card color="green lighten-1"><br><img src="/racing-helmet.png" alt="user" /><br> <h3>Wear a helmet</h3>  <br> <h3 v-if="data">{{data[data.length-1].withhelmet}}</h3> <br></v-card></v-col>
+            <v-col cols="2"></v-col>
+            <v-col cols="3"><v-card color="red lighten-1"><br><img src="/face-man-profile.png" alt="user" /><br> <h3>Not wearing a helmet</h3><br> <h3 v-if="data">{{data[data.length-1].withouthelmet}}</h3> <br></v-card></v-col>
+            <v-col cols="2"></v-col>
           </v-row>
-        </v-col>
-        <v-col cols="5" align="center"><br><br>
-          <h3> {{currentDate()}}</h3><br><br>
-          <!--<h3 v-if="data"> {{data[data.length-1].date}}</h3><br><br>-->
-          <v-row>
-            <v-col cols="1"></v-col>
-            <v-col cols="11" align="center">
+        </v-col>    
+      </v-row><br><br><br>
+      <v-row>
+        
+            <v-col cols="2"></v-col>
+            <v-col cols="8" align="center">
               <v-card >
                 <bar-chart
                   :barchartdata="barchartdata"
                   :barchartoptions="barchartoptions"
                   :height="300"/>
-              </v-card>
-            </v-col>
+              </v-card></v-col>
+            <v-col cols="2"></v-col>
             
-          </v-row>
-        </v-col>
-      </v-row> 
+          
+      </v-row>
       <br><br><br>
     </div>
     <br /><br /><br />
@@ -61,10 +60,10 @@ export default {
               "rgba(239, 83, 80, 0.2)",
             ],
             borderColor: [
-              "rgba(102, 187, 106, 1)",
-              "rgba(239, 83, 80, 1)",
+              "rgba(102, 187, 106, 2)",
+              "rgba(239, 83, 80, 2)",
             ],
-            borderWidth: 1
+            borderWidth: 2
           }
         ]
       },
