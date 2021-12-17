@@ -53,7 +53,7 @@ export default {
     treeShake: true,
     defaultAssets: {
     font: {
-      family: 'Libre Baskerville'}},
+      family: 'Libre Baskerville'},
     theme: {
       dark: false,
       themes: {
@@ -69,7 +69,7 @@ export default {
         }
       }
     }
-   
+  }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
