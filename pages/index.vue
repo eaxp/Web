@@ -50,33 +50,19 @@ export default {
   data() {
     return {
       data: null,
-      value: "",
-      items: [
-        {
-          icon: "mdi-account-details",
-        },
-        {
-          icon: "mdi-database",
-        },
-      ],
-
-      jsonchartdata: {
-        labels: [],
-        datasets: [],
-      },
       barchartdata: {
         labels: ["with helmet", "without helmet"],
         datasets: [
           { 
-            label: "# of Votes",
+            label: "",
             data: [60, 54],
             backgroundColor: [
-              "rgba(255, 99, 132, 0.2)",
-              "rgba(54, 162, 235, 0.2)",
+              "rgba(102, 187, 106, 0.2)",
+              "rgba(239, 83, 80, 0.2)",
             ],
             borderColor: [
-              "rgba(255, 99, 132, 1)",
-              "rgba(54, 162, 235, 1)",
+              "rgba(102, 187, 106, 1)",
+              "rgba(239, 83, 80, 1)",
             ],
             borderWidth: 1
           }
@@ -103,9 +89,6 @@ export default {
       const res = await this.$axios.get(url);
       console.log(res.data);
       this.data = res.data;
-      const res1 = await this.$axios.get(url);
-      var results = res1.data;
-      var tmplabels = [],tmpdata = [];
       results.forEach(function(x) {
         tmplabels.push(x.date);
         tmpdata.push(parseFloat(x.sum));

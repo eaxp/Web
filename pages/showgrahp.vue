@@ -78,10 +78,10 @@ export default {
         labels: tmplabels,
         datasets: [
           {
-            label: "Sum",
+            label: "Person",
             data: tmpdata,
-            borderColor: "rgb(75, 192, 192)",
-            backgroundColor: "rgba(75, 192, 192, 0.2)",
+            borderColor: "rgb(240, 98, 146)",
+            backgroundColor: "rgba(240, 98, 146, 0.2)",
           },
         ],
       };
