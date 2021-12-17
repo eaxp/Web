@@ -54,7 +54,7 @@ export default {
         labels: ["with helmet", "without helmet"],
         datasets: [
           { 
-            label: "",
+            label: " Data ",
             data: [60, 54],
             backgroundColor: [
               "rgba(102, 187, 106, 0.2)",
