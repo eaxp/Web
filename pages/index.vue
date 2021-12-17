@@ -1,7 +1,11 @@
 <template>
+
   <div>
+  
+     
+  <div >  
     <br /><br />
-    <h1 align="center">HELMET MONITORING FOR MFU CAMPUS</h1>
+    <h1 align="center" id="font">HELMET MONITORING FOR MFU CAMPUS</h1>
     <br /><br />
     <div>
       <v-row>
@@ -35,6 +39,7 @@
       <br><br><br>
     </div>
     <br /><br /><br />
+  </div>
   </div>
 </template>
   
