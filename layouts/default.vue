@@ -76,16 +76,6 @@ export default {
           title: "แดชบอร์ด",
           to: "/showgrahp",
         },
-        {
-          icon: "mdi-circle-outline",
-          title: "test01",
-          to: "/test01",
-        },
-        {
-          icon: "mdi-camcorder",
-          title: "test02",
-          to: "/test02",
-        },
       ],
 
       miniVariant: false,
