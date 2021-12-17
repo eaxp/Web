@@ -10,7 +10,7 @@
     <div>
       <v-row>
         <v-col cols="12" align="center">
-          <h2 class="display-1">Number of motorcycle users wearing helmets</h2><br><br>
+          <h2>Number of motorcycle users wearing helmets</h2><br><br>
           <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
           <v-row align="center">
             <v-col cols="2"></v-col>
