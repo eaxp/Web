@@ -10,7 +10,7 @@
     <div>
       <v-row>
         <v-col cols="7" align="center">
-          <h2>จำนวนการสวมหมวกนิรภัยของผู้ใช้รถจักรยานยนต์</h2><br><br>
+          <h2 class="display-1">จำนวนการสวมหมวกนิรภัยของผู้ใช้รถจักรยานยนต์</h2><br><br>
           <h3>Current Date & Time: {{currentDateTime()}}</h3><br><br><br>
           <v-row>
             <v-col cols="1"></v-col>
@@ -20,7 +20,7 @@
           </v-row>
         </v-col>
         <v-col cols="5" align="center"><br><br>
-          <h3> {{currentDateTime()}}</h3><br><br>
+          <h3> {{currentDate()}}</h3><br><br>
           <!--<h3 v-if="data"> {{data[data.length-1].date}}</h3><br><br>-->
           <v-row>
             <v-col cols="1"></v-col>
