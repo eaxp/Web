@@ -1,7 +1,1 @@
-[["With Helmet:0", "Without Helmet:1"], 
-["With Helmet:0", "Without Helmet:2"], 
-["With Helmet:0", "Without Helmet:3"], 
-["With Helmet:2", "Without Helmet:4"], 
-["With Helmet:2", "Without Helmet:5"], 
-["With Helmet:2", "Without Helmet:6"], 
-["With Helmet:2", "Without Helmet:7"]]
+[{"id": "1", "With Helmet": "0", "Without Helmet": "1"}, {"id": "2", "With Helmet": "0", "Without Helmet": "2"}]
