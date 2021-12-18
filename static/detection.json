@@ -1,0 +1,7 @@
+[{"date": "18/12/2021", "withhelmet": 0, "withouthelmet": 1, "Sum": 1}, 
+ {"date": "18/12/2021", "withhelmet": 0, "withouthelmet": 2, "Sum": 2}, 
+ {"date": "18/12/2021", "withhelmet": 0, "withouthelmet": 3, "Sum": 3}, 
+ {"date": "18/12/2021", "withhelmet": 1, "withouthelmet": 3, "Sum": 4}, 
+ {"date": "18/12/2021", "withhelmet": 1, "withouthelmet": 4, "Sum": 5}, 
+ {"date": "18/12/2021", "withhelmet": 2, "withouthelmet": 5, "Sum": 7}, 
+ {"date": "18/12/2021", "withhelmet": 2, "withouthelmet": 7, "Sum": 9}]

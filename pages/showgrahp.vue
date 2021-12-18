@@ -20,17 +20,11 @@
 
 <script>
 const url = "/aaa20.json";
+const url1 = "/detection.json";
 
 export default {
   data() {
     return { 
-      data1: null,
-      search1: "",   
-      headers1: [
-        { text: "ID", align: "start", sortable: true, value: "id" },
-        { text: "Sum", value: "sum" },
-        { text: "Date", value: "date" },
-      ],
       barchartoptions: {
         responsive: true,
         maintainAspectRatio: false,
@@ -45,10 +39,6 @@ export default {
         }
       },
       loaded: false,
-      apichartdata: {
-        labels: [],
-        datasets: [],
-      },
       jsonchartdata: {
         labels: [],
         datasets: [],
@@ -59,12 +49,20 @@ export default {
     this.loaded = false;
     try {
       const res = await this.$axios.get(url);
+      this.data = res.data;
       var results = res.data;
-      var tmplabels = [],
-        tmpdata = [];
-      results.forEach(function (x) {
+      var tmplabels = [],tmpdata = [];
+      results.forEach(function(x) {
         tmplabels.push(x.date);
-        tmpdata.push(parseFloat(x.sum));
+        tmpdata.push(parseFloat(x.withhelmet));
+      });
+      const res1 = await this.$axios.get(url1);
+      this.data1 = res1.data1;
+      var results1 = res1.data;
+      var tmplabels2 = [],tmpdata2 = [];
+      results1.forEach(function(y) {
+        tmplabels2.push(y.date);
+        tmpdata2.push(parseFloat(y.sum));
       });
 
       var tempData = {
@@ -80,6 +78,19 @@ export default {
         ],
       };
       this.jsonchartdata = tempData;
+      var tempData2 = {
+        labels: tmplabels2,
+        datasets: [
+          {
+            label: "aaa",
+            data: tmpdata,
+            borderColor: "rgb(255, 0, 0, 2)",
+            backgroundColor: "rgba(255, 0, 0, 0.2)",
+            borderWidth: 2
+          },
+        ],
+      };
+      this.jsonchartdata2 = tempData2;
       this.loaded = true;
 
     } catch (e) {

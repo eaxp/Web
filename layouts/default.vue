@@ -76,6 +76,7 @@ export default {
           title: "Dashboard",
           to: "/showgrahp",
         },
+        
       ],
 
       miniVariant: false,

@@ -44,7 +44,7 @@
   
 <script>
 
-const url = "/aaaaa copy 2.json";
+const url = "/detection.json";
 export default {
   data() {
     return {
@@ -95,22 +95,6 @@ export default {
     } catch (e) {
       console.error(e);
     }
-  },
-
-  
-  computed: {
-    //computedDateFormatted() {
-      //return this.formatDate(this.date);
-    //},
-    userLastCount() {
-      return this.lineData[this.lineData.length - 1].data;
-    },
-  },
-
-  watch: {
-    date(val) {
-      this.dateFormatted = this.formatDate(this.date);
-    },
   },
 
   methods: {
